@@ -20,7 +20,7 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[a4paper]{twentysecondcv} % a4paper for A4
+\documentclass[a4paper,italian]{twentysecondcv_ita} % a4paper for A4
 
 %----------------------------------------------------------------------------------------
 %	 COLOURS
@@ -38,16 +38,18 @@
 
 % If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
 
-\profilepic{avatar.jpg} % Profile picture
+\profilepic{avatar.png} % Profile picture
 
 \cvname{Adriano Fantini} % Your name
-\cvjobtitle{Climatologist} % Job title/career
+\cvjobtitle{Climatologo} % Job title/career
 
-\cvdate{6 November 1990} % Date of birth
-\cvaddress{Trieste, Italy} % Short address/location, use \newline if more than 1 line is required
+\cvdate{Belluno, Italia 06/11/1990} % Date of birth
+\cvaddress{Trieste, Italia} % Short address/location, use \newline if more than 1 line is required
 \cvnumberphone{+39 3479540982} % Phone number
 \cvsite{\href{https://adrfantini.github.io}{adrfantini.github.io}} % Personal website
 \cvmail{adr.fantini+cv@gmail.com} % Email address
+\cvgithub{\href{https://github.com/adrfantini}{github.com/adrfantini}} % Personal website
+\cvlinkedin{\href{https://www.linkedin.com/in/adriano-fantini/}{linkedin.com/in/adriano-fantini}} % Personal website
 
 %----------------------------------------------------------------------------------------
 
@@ -57,7 +59,10 @@
 %	 ABOUT ME
 %----------------------------------------------------------------------------------------
 
-\aboutme{I am a person and I do things all day}
+\aboutme{Sono attualmente un ricercatore al Centro Internazionale di Fisica Teorica (ICTP). Sono specializzato in climatologia, idrologia e data science; mi interessano soprattutto gli aspetti tecnici insiti nell'analisi di grandi quantità di dati derivanti da simulazioni climatiche su ambienti di High Performance Computing.\\
+Come hobby modifico, aggiusto e spesso rompo oggetti dilettandomi di falegnameria, elettronica, informatica e tecnologia.\\
+Amo molto camminare in montagna, arrampicare e fare escursioni, in particolare nelle Dolomiti dove sono cresciuto.
+}
 % To have no About Me section, just remove all the text and leave \aboutme{}
 
 %----------------------------------------------------------------------------------------
@@ -68,7 +73,7 @@
 \skills{
     {Linux/5.5},
     {R/5.1},
-    {Spatial data/4.2},
+    {Dati spaziali/4.2},
     {HPC/3.9},
     {Python/2.1}}
 
@@ -78,87 +83,81 @@
 \skillstext{}
 
 % Language skill section, each skill must have a value between 1 an 5
-\langskill{{Italian/5},{English/4}}
+\langskill{{Italiano/5},{Inglese/4}}
 
 %----------------------------------------------------------------------------------------
 
 \makeprofile % Print the sidebar
 
 %----------------------------------------------------------------------------------------
-%	 INTERESTS
+%	 EDUCATION
 %----------------------------------------------------------------------------------------
 
-\section{Interests}
+\section{Lavoro}
 
-The heroine and the dreamer of Wonderland; Alice is the principal character.
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{2019--now}{Visiting scientist}{Trieste, Italia}{Centro Internazionale di Fisica Teorica (ICTP)}
+\end{twenty}
 
 %----------------------------------------------------------------------------------------
 %	 EDUCATION
 %----------------------------------------------------------------------------------------
 
-\section{Education}
+\section{Titoli di studio}
 
 \begin{twenty} % Environment for a list with descriptions
-	\twentyitem{since 1865}{Ph.D. {\normalfont candidate in Computer Science}}{Wonderland}{\emph{A Quantified Theory of Social Cohesion.}}
-	\twentyitem{1863-1865}{M.Sc. magna cum laude}{Wonderland}{Majoring in Computer Science}
-	\twentyitem{1861-1863}{B.Sc. magna cum laude}{Wonderland}{Majoring in Computer Science}
-	\twentyitem{1856-1861}{High school}{Wonderland}{Specializing in mathematics and physics.}
+	\twentyitem{2019}{Dottorato in Scienze della Terra e Meccanica dei Fluidi}{Trieste, Italia}{\emph{Climate change impact on flood hazard over Italia}\\ Conseguito con lode}
+	\twentyitem{2015}{Laure magistrale in Fisica}{Trieste, Italia}{\emph{Evaluation of the impact of the high resolution for the Alpine region in a present-day and future scenario simulation with the regional climate model RegCM4}\\ 110/110 con lode}
+	\twentyitem{2012}{Laurea triennale in fisica}{Trieste, Italia}{\emph{Utilizzo del microcontrollore Arduino per la realizzazione di misure nei laboratori didattici dei corsi di Fisica}\\ 106/110}
 	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
-\end{twenty}
-
-\begin{twenty}
-\twentyitem{1234}{lalal}{lalala}{lalalalalalla}
 \end{twenty}
 
 %----------------------------------------------------------------------------------------
 %	 PUBLICATIONS
 %----------------------------------------------------------------------------------------
 
-\section{Publications}
-
-\begin{twentyshort} % Environment for a short list with no descriptions
-	\twentyitemshort{1865}{Chapter One, Down the Rabbit Hole.}
-	\twentyitemshort{1865}{Chapter Two, The Pool of Tears.}
-	\twentyitemshort{1865}{Chapter Three,  The Caucus Race and a Long Tale.}
-	\twentyitemshort{1865}{Chapter Four,  The Rabbit Sends a Little Bill.}
-	\twentyitemshort{1865}{Chapter Five,  Advice from a Caterpillar.}
-	%\twentyitemshort{<dates>}{<title/description>}
-\end{twentyshort}
-
-%----------------------------------------------------------------------------------------
-%	 AWARDS
-%----------------------------------------------------------------------------------------
-
-\section{Awards}
-
-\begin{twentyshort} % Environment for a short list with no descriptions
-	\twentyitemshort{1987}{All-Time Best Fantasy Novel.}
-	\twentyitemshort{1998}{All-Time Best Fantasy Novel before 1990.}
-	%\twentyitemshort{<dates>}{<title/description>}
-\end{twentyshort}
-
-%----------------------------------------------------------------------------------------
-%	 EXPERIENCE
-%----------------------------------------------------------------------------------------
-
-\section{Experience}
+\section{Pubblicazioni}
 
 \begin{twenty} % Environment for a list with descriptions
-	\twentyitem{1900}{Alice in Wonderland-The Circra (1900's) Silent Film.}{Film}{The first Alice on film was over a hundred years ago.}
-	\twentyitem{1933}{Alice in Wonderland 1933 version.}{Film}{This film stars Ethel griffies and Charlotte Henry. It was a box office flop when it was released.}
-	\twentyitem{1951}{Disney Film.}{Film}{Walt Disney brings Lewis Carroll's fantasy story to life in this well done animated classic. Even though many elements from the book were dropped, such as the duchess with the baby pig and mock turtle, this version is without a doubt the most famous Alice adaption made.}
+	\twentyitem{2019}{\href{http://users.ictp.it/~afantini/PhD_thesis/PhD_thesis_final_15feb2019.pdf}{Climate change impact on flood hazard over Italia}}{UniTS ArTS}{Fantini A. \hfill Supervisore di tesi: Coppola E.}
+	\twentyitem{2018}{\href{https://doi.org/10.5194/tc-12-759-2018}{The European mountain cryosphere: A review of past, current and future issues}}{The Cryosphere}{Beniston M., Farinotti D., Stoffel M., Andreassen L. M., Coppola E., Eckert N., Fantini A. et al.}
+	\twentyitem{2016}{\href{https://doi.org/10.1007/s00382-016-3453-4}{Assessment of multiple daily precipitation statistics in ERA-Interim driven Med-CORDEX and EURO-CORDEX experiments against high resolution observations}}{Climate Dynamics}{Fantini A., Raffaele F., Torma C., Bacer S., Coppola E., Giorgi F., Ahrens B., Dubois C., Sanchez E., Verdecchia M.}
 	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
 \end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 CONFERENCES AND WORKSHOPS
+%----------------------------------------------------------------------------------------
+
+\section{Conferenze e corsi}
+
+\begin{twentyshort} % Environment for a list with descriptions
+	\twentyitembis{2019}{European Geosciences Union General Assembly}{Poster}
+	\twentyitembis{2019}{Energy Efficiency in HPC -- Cineca}{Corso}
+	\twentyitembis{2019}{BSAFE UNDSS--UNESCO}{Corso}
+	\twentyitembis{2018}{9th ICTP Workshop on the Theory and Use of Regional Climate Models}{Speaker e assistente}
+	\twentyitembis{2018}{European Geosciences Union General Assembly}{Poster}
+	\twentyitembis{2017}{Fourth Workshop on Water Resources in Developing Countries: Hydroclimate Modeling and Analysis Tools}{Speaker e assistente}
+	\twentyitembis{2017}{10th HyMeX workshop}{Speaker}
+	\twentyitembis{2017}{European Geosciences Union General Assembly}{Partecipante}
+	\twentyitembis{2016}{16th European Meteorological Society Annual Meeting}{Speaker}
+	\twentyitembis{2016}{8th ICTP Workshop on the Theory and Use of Regional Climate Models}{Speaker e assistente}
+	\twentyitembis{2016}{ICRC-CORDEX 2016}{Partecipante}
+	\twentyitembis{2016}{European Geosciences Union General Assembly}{Speaker}
+	\twentyitembis{2015}{CLIVAR-ICTP Workshop on Decadal Climate Variability and Predictability}{Partecipante}
+	\twentyitembis{2015}{3rd Workshop on Water Resources in Developing Countries: Planning and Management in Face of Hydroclimatological Extremes and Variability}{Partecipante}
+	\twentyitembis{2014}{7th ICTP Workshop on the Theory and Use of Regional Climate Models}{Partecipante}
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twentyshort}
 
 %----------------------------------------------------------------------------------------
 %	 OTHER INFORMATION
 %----------------------------------------------------------------------------------------
 
-\section{Other information}
+\section{Altre informazioni}
 
-\subsection{Review}
-
-Some more info about me, maybe
+Durante l'università ho effettuato traduzioni dall'inglese in qualità di freelance per un noto sito web di tecnologia.\\
+Negli anni della laurea magistrale e del dottorato sono stato eletto come rappresentante degli studenti presso gli organi universitari.
 
 \vspace*{\fill}
 Autorizzo il trattamento dei miei dati personali ai sensi dell'art. 13 Dlgs 196 del 30 giugno 2003 e dell'art. 13 GDPR (Regolamento UE 2016/679) ai fini della ricerca e selezione del personale.

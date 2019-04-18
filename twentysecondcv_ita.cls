@@ -172,7 +172,7 @@
 		%------------------------------------------------
 		
 		\ifthenelse{\equal{\aboutme}{}}{}{
-			\profilesection{About me}
+			\profilesection{A proposito di me}
 			\begin{justify}
 				\aboutme
 			\end{justify}
@@ -180,14 +180,14 @@
 
 		%------------------------------------------------
 
-		\profilesection{Skills}
+		\profilesection{Capacità}
 
 		\skills
 		\skillstext
 			
 		%------------------------------------------------
 
-		\profilesection{Languages} % Added by AF
+		\profilesection{Lingue} % Added by AF
         \langskill
 		
 		%------------------------------------------------
