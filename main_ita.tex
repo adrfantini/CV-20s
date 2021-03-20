@@ -7,7 +7,7 @@
 % http://www.LaTeXTemplates.com
 %
 % Original author:
-% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by
 % Vel (vel@LaTeXTemplates.com)
 % Further modifications by Adriano Fantini, author of the CV
 %
@@ -20,7 +20,7 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[a4paper,italian]{twentysecondcv_ita} % a4paper for A4
+\documentclass[b4paper,italian]{twentysecondcv_ita} % a3paper for A3
 
 %----------------------------------------------------------------------------------------
 %	 COLOURS
@@ -41,12 +41,12 @@
 \profilepic{avatar.png} % Profile picture
 
 \cvname{Adriano Fantini} % Your name
-\cvjobtitle{Climatologo} % Job title/career
+\cvjobtitle{Sviluppatore software} % Job title/career
 
-\cvdate{Belluno, Italia 06/11/1990} % Date of birth
-\cvaddress{Trieste, Italia} % Short address/location, use \newline if more than 1 line is required
+\cvdate{06/11/1990} % Date of birth
+\cvaddress{Belluno, Italia} % Short address/location, use \newline if more than 1 line is required
 \cvnumberphone{+39 3479540982} % Phone number
-\cvsite{\href{https://adrfantini.github.io}{adrfantini.github.io}} % Personal website
+\cvsite{\href{https://www.adrianofantini.eu}{adrianofantini.eu}} % Personal website
 \cvmail{adr.fantini+cv@gmail.com} % Email address
 \cvgithub{\href{https://github.com/adrfantini}{github.com/adrfantini}} % Personal website
 \cvlinkedin{\href{https://www.linkedin.com/in/adriano-fantini/}{linkedin.com/in/adriano-fantini}} % Personal website
@@ -59,9 +59,11 @@
 %	 ABOUT ME
 %----------------------------------------------------------------------------------------
 
-\aboutme{Sono attualmente un ricercatore al Centro Internazionale di Fisica Teorica (ICTP). Sono specializzato in climatologia, idrologia e data science; mi interessano soprattutto gli aspetti tecnici insiti nell'analisi di grandi quantità di dati derivanti da simulazioni climatiche su ambienti di High Performance Computing.\\
+\aboutme{Sono uno sviluppatore software e analista dati presso Higeco SRL, azienda che si occupa principalmente di monitoring di impianti industriali e fotovoltaici, con clienti in tutto il mondo.\\
+In precedenza sono stato ricercatore al il Centro Internazionale di Fisica Teorica (ICTP) e dottorando dell'Università di Trieste, dove ho vissuto per 10 anni.\\
+Mi interessano soprattutto gli aspetti tecnici della programmazione e dell'analisi di grandi quantità di dati, anche su ambienti di High Performance Computing.\\
 Come hobby modifico, aggiusto e spesso rompo oggetti dilettandomi di falegnameria, elettronica, informatica e tecnologia.\\
-Amo molto camminare in montagna, arrampicare e fare escursioni, in particolare nelle Dolomiti dove sono cresciuto.
+Amo molto camminare in montagna, arrampicare e fare escursioni, in particolare nelle Dolomiti, dove sono cresciuto.
 }
 % To have no About Me section, just remove all the text and leave \aboutme{}
 
@@ -71,11 +73,15 @@ Amo molto camminare in montagna, arrampicare e fare escursioni, in particolare n
 
 % Skill bar section, each skill must have a value between 0 an 6 (float)
 \skills{
-    {Linux/5.5},
+    {Linux/5.2},
     {R/5.1},
-    {Dati spaziali/4.2},
+    {Git/5},
+    {Lua/4.7},
+    {Dati spaziali/4.5},
+    {Javascript (backend e frontend)/4},
     {HPC/3.9},
     {Python/2.1}}
+
 
 %------------------------------------------------
 
@@ -93,10 +99,11 @@ Amo molto camminare in montagna, arrampicare e fare escursioni, in particolare n
 %	 EDUCATION
 %----------------------------------------------------------------------------------------
 
-\section{Lavoro}
+\section{Esperienze lavorative}
 
 \begin{twenty} % Environment for a list with descriptions
-	\twentyitem{2019--now}{Visiting scientist}{Trieste, Italia}{Centro Internazionale di Fisica Teorica (ICTP)}
+	\twentyitem{2019--oggi}{Sviluppatore software e analista dati preso Higeco SRL}{Belluno, Italia}{Higeco è specializzata in monitoring di impianti industriali e fotovoltaici. Il principale progetto di cui mi sono occupato ha richiesto la creazione da zero di un pacchetto software (EMS -- Energy Management System) che permette di controllare i flussi di energia di impianti industriali e fotovoltaici. Il prodotto è estremamente flessibile e personalizzabile secondo le necessità del cliente e dell'impianto. Tale software è ad oggi in uso in molti impianti di grosse dimensioni in quattro continenti diversi.}
+	\twentyitem{2015--2019}{Dottorando e ricercatore presso Centro Internazionale di Fisica Teorica (ICTP)}{Trieste, Italia}{Durante i miei anni all'ICTP mi sono occupato principalmente di simulazioni climatiche (con il modello RegCM4) ed idrologiche (con i modelli CHyM e CA2D). Ho acquisito molte competenze nell'analisi di dati spaziali (soprattutto tramite il linguaggio di programmazione e statistica R) e nell'uso di piattaforme di calcolo ad alte prestazioni (HPC), oltre che nella gestione di grandi moli di dati.}
 \end{twenty}
 
 %----------------------------------------------------------------------------------------
@@ -106,9 +113,10 @@ Amo molto camminare in montagna, arrampicare e fare escursioni, in particolare n
 \section{Titoli di studio}
 
 \begin{twenty} % Environment for a list with descriptions
-	\twentyitem{2019}{Dottorato in Scienze della Terra e Meccanica dei Fluidi}{Trieste, Italia}{\emph{Climate change impact on flood hazard over Italia}\\ Conseguito con lode}
+	\twentyitem{2019}{Dottorato in Scienze della Terra e Meccanica dei Fluidi}{Trieste, Italia}{\emph{Climate change impact on flood hazard over Italia}\\ Titolo conseguito con lode}
 	\twentyitem{2015}{Laure magistrale in Fisica}{Trieste, Italia}{\emph{Evaluation of the impact of the high resolution for the Alpine region in a present-day and future scenario simulation with the regional climate model RegCM4}\\ 110/110 con lode}
 	\twentyitem{2012}{Laurea triennale in fisica}{Trieste, Italia}{\emph{Utilizzo del microcontrollore Arduino per la realizzazione di misure nei laboratori didattici dei corsi di Fisica}\\ 106/110}
+	\twentyitem{2009}{Diploma di maturità}{Belluno, Italia}{Liceo Scientifico Galileo Galilei\\ 86/100}
 	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
 \end{twenty}
 
@@ -119,9 +127,10 @@ Amo molto camminare in montagna, arrampicare e fare escursioni, in particolare n
 \section{Pubblicazioni}
 
 \begin{twenty} % Environment for a list with descriptions
-	\twentyitem{2019}{\href{http://users.ictp.it/~afantini/PhD_thesis/PhD_thesis_final_15feb2019.pdf}{Climate change impact on flood hazard over Italia}}{UniTS ArTS}{Fantini A. \hfill Supervisore di tesi: Coppola E.}
-	\twentyitem{2018}{\href{https://doi.org/10.5194/tc-12-759-2018}{The European mountain cryosphere: A review of past, current and future issues}}{The Cryosphere}{Beniston M., Farinotti D., Stoffel M., Andreassen L. M., Coppola E., Eckert N., Fantini A. et al.}
-	\twentyitem{2016}{\href{https://doi.org/10.1007/s00382-016-3453-4}{Assessment of multiple daily precipitation statistics in ERA-Interim driven Med-CORDEX and EURO-CORDEX experiments against high resolution observations}}{Climate Dynamics}{Fantini A., Raffaele F., Torma C., Bacer S., Coppola E., Giorgi F., Ahrens B., Dubois C., Sanchez E., Verdecchia M.}
+        \twentyitem{2020}{\href{https://doi.org/10.1007/s00382-020-05400-5}{A new spatially distributed added value index for regional climate models: the EURO-CORDEX and the CORDEX-CORE highest resolution ensembles}}{Climate Dynamics}{Ciarlo` J., Coppola E., \underline{Fantini A.}, Giorgi F. et al.}
+	\twentyitem{2019}{\href{http://users.ictp.it/~afantini/PhD_thesis/PhD_thesis_final_15feb2019.pdf}{Climate change impact on flood hazard over Italy}}{UniTS ArTS}{\underline{Fantini A.} \hfill Supervisore di tesi: Coppola E.}
+	\twentyitem{2018}{\href{https://doi.org/10.5194/tc-12-759-2018}{The European mountain cryosphere: A review of past, current and future issues}}{The Cryosphere}{Beniston M., Farinotti D., Stoffel M., Andreassen L. M., Coppola E., Eckert N., \underline{Fantini A.} et al.}
+	\twentyitem{2016}{\href{https://doi.org/10.1007/s00382-016-3453-4}{Assessment of multiple daily precipitation statistics in ERA-Interim driven Med-CORDEX and EURO-CORDEX experiments against high resolution observations}}{Climate Dynamics}{\underline{Fantini A.}, Raffaele F., Torma C., Bacer S., Coppola E., Giorgi F., Ahrens B., Dubois C., Sanchez E., Verdecchia M.}
 	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
 \end{twenty}
 
@@ -157,7 +166,8 @@ Amo molto camminare in montagna, arrampicare e fare escursioni, in particolare n
 \section{Altre informazioni}
 
 Durante l'università ho effettuato traduzioni dall'inglese in qualità di freelance per un noto sito web di tecnologia.\\
-Negli anni della laurea magistrale e del dottorato sono stato eletto come rappresentante degli studenti presso gli organi universitari.
+Negli anni della laurea magistrale e del dottorato sono stato eletto come rappresentante degli studenti presso gli organi universitari.\\
+Vivo a Belluno con la mia compagna e nostra figlia, nata nel 2010.
 
 \vspace*{\fill}
 Autorizzo il trattamento dei miei dati personali ai sensi dell'art. 13 Dlgs 196 del 30 giugno 2003 e dell'art. 13 GDPR (Regolamento UE 2016/679) ai fini della ricerca e selezione del personale.
@@ -184,4 +194,4 @@ Autorizzo il trattamento dei miei dati personali ai sensi dell'art. 13 Dlgs 196 
 
 %----------------------------------------------------------------------------------------
 
-\end{document} 
+\end{document}
