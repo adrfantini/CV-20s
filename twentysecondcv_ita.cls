@@ -78,7 +78,7 @@
 \newcommand*\icon[1]{\tikz[baseline=(char.base)]{\node[shape=circle,draw,inner sep=1pt, fill=mainblue,mainblue,text=white] (char) {#1};}}
 
 % Command for printing skill progress bars
-\newcommand\skills[1]{ 
+\newcommand\skills[1]{
 	\renewcommand{\skills}{
 		\begin{tikzpicture}
 			\foreach [count=\i] \x/\y in {#1}{
@@ -91,11 +91,11 @@
 }
 
 % Command for printing skills text
-\newcommand\skillstext[1]{ 
+\newcommand\skillstext[1]{
 	\renewcommand{\skillstext}{
 	    \ifthenelse{\equal{#1}{}}{}{
 		\begin{flushleft}
-			\foreach [count=\i] \x/\y in {#1}{ 
+			\foreach [count=\i] \x/\y in {#1}{
 				\x$ \star $\y
 			}
 			\scriptsize
@@ -112,10 +112,10 @@
     \foreach \x in {1,...,5}{%
         \space{\ifnumgreater{\x}{#2}{\color{maingray}}{\color{mainblue}}\ratingmarker}}\par
 }
-\newcommand\langskill[1]{ 
+\newcommand\langskill[1]{
 	\renewcommand{\langskill}{
 		\begin{flushleft}
-			\foreach [count=\i] \x/\y in {#1}{ 
+			\foreach [count=\i] \x/\y in {#1}{
 				\textsc{\x}\hfill
                 \foreach \z in {1,...,5}{%
                 \space{\ifnumgreater{\z}{\y}{\color{maingray}}{\color{mainblue}}\ratingmarker}}\par
@@ -136,9 +136,9 @@
 	%------------------------------------------------
 
 	\begin{textblock}{6}(0.5, 0.2)
-			
+
 		%------------------------------------------------
-		
+
 		\ifthenelse{\equal{\profilepic}{}}{}{
 			\begin{center}
 				\begin{tikzpicture}[x=\imagescale,y=-\imagescale]
@@ -170,7 +170,7 @@
 		\end{tabular}
 
 		%------------------------------------------------
-		
+
 		\ifthenelse{\equal{\aboutme}{}}{}{
 			\profilesection{A proposito di me}
 			\begin{justify}
@@ -180,18 +180,18 @@
 
 		%------------------------------------------------
 
-		\profilesection{Capacità}
+		\profilesection{Competenze}
 
 		\skills
 		\skillstext
-			
+
 		%------------------------------------------------
 
 		\profilesection{Lingue} % Added by AF
         \langskill
-		
+
 		%------------------------------------------------
-			
+
 	\end{textblock}
 }
 
